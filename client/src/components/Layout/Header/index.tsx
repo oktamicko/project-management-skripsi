@@ -33,12 +33,14 @@ function Header({ opened, onToggleNavbar, onClose }: HeaderProps) {
         >
           <div className={styles['logo-container']}>
             <MediaQuery largerThan={768} styles={{ display: 'none' }}>
-              <Box size={34} color="#845EF7" />
+              {/* <Box size={34} color="#845EF7" /> */}
+              <img src='./logo192_bri.png' alt='Logo BRI' width={30} height={30}/>
             </MediaQuery>
             <MediaQuery smallerThan={768} styles={{ display: 'none' }}>
-              <Box size={48} color="#845EF7" />
+              {/* <Box size={48} color="#845EF7" /> */}
+              <img src='./logo192_bri.png' alt='Logo BRI' width={30} height={30}/>
             </MediaQuery>
-            <Text className={styles.logo}>ProjectHub</Text>
+            <Text className={styles.logo}>DSE BRI</Text>
           </div>
         </Anchor>
       </Grid.Col>

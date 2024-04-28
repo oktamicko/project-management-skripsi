@@ -34,8 +34,9 @@ function AuthLayout({ title, children }: AuthLayoutProps) {
     <div className={styles.container}>
       <Card shadow="sm" p={30} radius="md" withBorder className={styles.card}>
         <Group spacing={4} mb={30} position="center">
-          <Box size={60} color="#845EF7" />
-          <div className={styles.logo}>ProjectHub</div>
+          {/* <Box size={60} color="#845EF7" /> */}
+          <img src='./logo192_bri.png' alt='Logo BRI' width={30} height={30}/>
+          <div className={styles.logo}>DSE BRI</div>
         </Group>
         <h1 className={styles.title}>{title}</h1>
         {children}
